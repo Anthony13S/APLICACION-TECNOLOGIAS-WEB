@@ -1,0 +1,74 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    padding: 40px 20px;
+    color: #222;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 40px;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    font-size: 14px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+/* Encabezado de tabla */
+th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+}
+
+/* Tabla: Empresa */
+.tabla-empresa th {
+    background-color: #e9edf3;
+}
+
+/* Tabla: Cliente */
+.tabla-cliente th {
+    background-color: #e9edf3;
+}
+
+/* Tabla: Productos */
+.tabla-productos th {
+    background-color: #e0e0e0;
+    text-align: center;
+}
+.tabla-productos td {
+    text-align: center;
+}
+
+/* Tabla: Info adicional */
+.tabla-info th {
+    background-color: #e9edf3;
+}
+
+.tabla-info .footer {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    background-color: #f9f9f9;
+    color: #444;
+    border-top: 1px solid #ccc;
+}
