@@ -54,3 +54,21 @@
           <tr>
             <th>Código</th>
             <th>Cantidad</th>
+            <th>Descripción</th>
+            <th>Precio Unitario</th>
+            <th>Descuento</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>UIO-TAX-002</td>
+            <td>1</td>
+            <td>QUITO TAX CONVENTION II</td>
+            <td>$140.00</td>
+            <td>$0.00</td>
+            <td>$140.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
