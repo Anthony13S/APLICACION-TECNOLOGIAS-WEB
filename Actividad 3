@@ -72,3 +72,17 @@
         </tbody>
       </table>
     </div>
+<!-- Totales -->
+    <div class="row justify-content-end mb-4">
+      <div class="col-12 col-md-4">
+        <div class="section-box">
+          <h6>Resumen</h6>
+          <ul class="list-unstyled">
+            <li class="d-flex justify-content-between"><span>Subtotal sin impuestos:</span><span>$140.00</span></li>
+            <li class="d-flex justify-content-between"><span>IVA 15%:</span><span>$21.00</span></li>
+            <li class="d-flex justify-content-between"><span>Subtotal IVA 15%:</span><span>$140.00</span></li>
+            <li class="d-flex justify-content-between fw-bold"><span>Total:</span><span>$161.00</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
