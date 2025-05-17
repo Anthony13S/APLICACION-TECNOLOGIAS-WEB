@@ -34,4 +34,16 @@
         </div>
       </div>
     </div>
+
+<!-- Cliente -->
+    <div class="row mb-4">
+      <div class="col-12">
+        <div class="section-box">
+          <h5>Datos del Cliente</h5>
+          <p class="mb-1">Nombre / Razón Social: STRATOS-TOTB S.A.</p>
+          <p class="mb-1">RUC / CI: 1793047750001</p>
+          <p class="mb-1">Dirección: AV. GONZALEZ SUAREZ N27-375 Y SAN IGNACIO</p>
+          <p class="mb-1">Fecha Emisión: 16/05/2025</p>
+        </div>
       </div>
+    </div>
