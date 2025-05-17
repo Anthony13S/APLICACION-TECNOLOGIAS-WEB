@@ -47,3 +47,10 @@
         </div>
       </div>
     </div>
+<!-- Detalle de Productos -->
+    <div class="table-responsive mb-4">
+      <table class="table table-bordered">
+       <thead class="table-light">
+          <tr>
+            <th>Código</th>
+            <th>Cantidad</th>
