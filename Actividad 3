@@ -86,3 +86,34 @@
         </div>
       </div>
     </div>
+<!-- Información adicional -->
+    <div class="row mb-4">
+      <div class="col-12">
+        <div class="section-box">
+          <h6>Información Adicional</h6>
+          <p>Nombre: STRATOS-TOTB S.A.<br>
+          Dirección: AV. GONZALEZ SUAREZ N27-375 Y SAN IGNACIO<br>
+          Email: alejandro.perez@fhlegal.ec</p>
+          <p>RETENCIÓN IR: INSTITUCIÓN SIN FINES DE LUCRO EXENTA DE RETENCIONES EN LA FUENTE ART. 9 NUMERAL 5 DE LA LRTI.<br>
+          RETENCIÓN IVA: SE APLICARÁ LA RETENCIÓN DEL IVA CON EL PORCENTAJE DEL 70% (SERVICIOS)</p>
+        </div>
+      </div>
+    </div>
+ <!-- Pago -->
+    <div class="row">
+      <div class="col-12">
+        <div class="section-box">
+          <h6>Datos para Pago</h6>
+          <p>BANCO: BANCO SOLIDARIO S.A.<br>
+          BENEFICIARIO: CORPORACION PARA LA TRANSPARENCIA FISCAL ECUATORIANA<br>
+          RUC: 1793189967001<br>
+          CUENTA NRO: 5926500019571<br>
+          TIPO DE CUENTA: CORRIENTE<br>
+          CORREO PAGOS: bcisneros@syco-abogados.com</p>
+          <p><strong>Forma de Pago:</strong> Tarjeta de Crédito — $161.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
