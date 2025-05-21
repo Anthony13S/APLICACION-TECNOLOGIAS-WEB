@@ -52,15 +52,3 @@ h1, h2 {
     color: #856404;
 }
 
-.perdido {
-    background-color: #f8d7da;
-    color: #721c24;
-}
-
-.nota {
-    font-weight: bold;
-    font-size: 1.3em;
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
-}
