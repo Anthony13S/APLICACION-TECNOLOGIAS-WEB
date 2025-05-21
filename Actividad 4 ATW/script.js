@@ -1,18 +1,3 @@
-// Notas declaradas directamente
-const parcial1 = 12;
-const parcial2 = 15;
-const proyectoFinal = 18;
-
-// Cálculo de la nota final
-const notaFinal = (parcial1 * 0.3) + (parcial2 * 0.3) + (proyectoFinal * 0.4);
-
-// Mostrar la nota
-const notaElemento = document.getElementById("notaFinal");
-const mensajeElemento = document.getElementById("mensaje");
-
-notaElemento.textContent = `Nota Final: ${notaFinal.toFixed(2)} / 20`;
-mensajeElemento.className = "resultado"; 
-
 // Evaluación del resultado
 if (notaFinal >= 14) {
     mensajeElemento.textContent = "Resultado: Aprobado directamente.";
