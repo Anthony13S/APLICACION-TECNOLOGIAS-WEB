@@ -6,12 +6,12 @@ const proyectoFinal = 18;
 // Cálculo de la nota final
 const notaFinal = (parcial1 * 0.3) + (parcial2 * 0.3) + (proyectoFinal * 0.4);
 
-// Mostrar la nota en la página
+// Mostrar la nota
 const notaElemento = document.getElementById("notaFinal");
 const mensajeElemento = document.getElementById("mensaje");
 
 notaElemento.textContent = `Nota Final: ${notaFinal.toFixed(2)} / 20`;
-mensajeElemento.className = "resultado"; // limpia clases previas
+mensajeElemento.className = "resultado"; 
 
 // Evaluación del resultado
 if (notaFinal >= 14) {
