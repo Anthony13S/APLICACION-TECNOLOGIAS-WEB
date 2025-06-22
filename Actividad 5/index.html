@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tareas</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <h1>Quehaceres por realizar</h1>
+
+  <form id="tareaForm">
+    <input type="text" id="tareaInput" placeholder="Escribe una tarea..." required>
+    <button type="submit">Agregar</button>
+    <button type="button" id="vaciarLista">Vaciar Lista</button>
+  </form>
+
+  <ul id="listaTareas"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
