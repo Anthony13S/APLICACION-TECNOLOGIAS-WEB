@@ -44,22 +44,3 @@ $(document).ready(function () {
     li.find('.guardarBtn').show();
   });
 
-  // Guardar tarea editada
-  $('#listaTareas').on('click', '.guardarBtn', function () {
-    let li = $(this).closest('li');
-    let nuevoTexto = li.find('.editarInput').val().trim();
-    if (nuevoTexto !== '') {
-      li.find('.textoTarea').text(nuevoTexto).show();
-      li.find('.editarInput').hide();
-      li.find('.guardarBtn').hide();
-      li.find('.editarBtn').show();
-    }
-  });
-
-  // Vaciar toda la lista
-  $('#vaciarLista').on('click', function () {
-    $('#listaTareas').fadeOut(300, function () {
-      $(this).empty().show();
-    });
-  });
-});
