@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulario Universitario</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body class="bg-dark text-light">
+
+  <header class="text-center py-4">
+    <h1>Formulario de Datos Universitarios</h1>
+  </header>
+
+  <main class="container py-4">
+    <form action="server.php" method="post" enctype="multipart/form-data" class="row g-3">
+
+      <!-- Nombre completo -->
+      <section class="col-md-6">
+        <label for="nombre" class="form-label">Nombre Completo</label>
+        <input type="text" name="nombre" id="nombre" class="form-control" required />
+      </section>
+
+      <!-- ID Universitario -->
+      <section class="col-md-6">
+        <label for="id_uni" class="form-label">ID Universitario</label>
+        <input type="text" name="id_uni" id="id_uni" class="form-control" required />
+      </section>
+
+      <!-- Cédula -->
+      <section class="col-md-6">
+        <label for="cedula" class="form-label">Cédula</label>
+        <input type="text" name="cedula" id="cedula" class="form-control" required />
+      </section>
+
+      <!-- Correo -->
+      <section class="col-md-6">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" name="email" id="email" class="form-control" required />
+      </section>
+
+      <!-- Teléfono -->
+      <section class="col-md-6">
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="tel" name="telefono" id="telefono" class="form-control" />
+      </section>
+
+      <!-- Universidad -->
+      <section class="col-md-6">
+        <label for="universidad" class="form-label">Universidad</label>
+        <select name="universidad" id="universidad" class="form-select" required>
+          <option value="">Seleccione una opción</option>
+          <option value="U1">ESCUELA POLITÉCNICA NACIONAL</option>
+          <option value="U2">UNIVERSIDAD CENTRAL DEL ECUADOR</option>
+          <option value="U3">PONTIFICIA UNIVERSIDADCATÓLICA DEL ECUADOR</option>
+          <option value="U4">UNIVERSIDAD POLITÉCNICASALESIANA</option>
+          <option value="U5">UNIVERSIDAD TÉCNICA PARTICULAR DE LOJA</option>
+          <option value="U6">UNIVERSIDAD TECNOLÓGICA INDOAMÉRICA</option>
+          <option value="U7">UNIVERSIDAD DE LAS FUERZAS ARMADAS ESPE</option>
+        </select>
+      </section>
+
+      <!-- Carrera -->
+      <section class="col-md-6">
+        <label for="carrera" class="form-label">Carrera</label>
+        <input type="text" name="carrera" id="carrera" class="form-control" required />
+      </section>
+
+      <!-- Modalidad -->
+      <section class="col-md-6">
+        <label class="form-label">Modalidad</label><br />
+        <input type="radio" name="modalidad" value="Presencial" checked /> Presencial
+        <input type="radio" name="modalidad" value="Virtual" /> Virtual
+      </section>
+
+      <!-- Jornada -->
+      <section class="col-md-6">
+        <label class="form-label">Jornada</label><br />
+        <input type="checkbox" name="jornada[]" value="Matutina" /> Matutina
+        <input type="checkbox" name="jornada[]" value="Vespertina" /> Vespertina
+        <input type="checkbox" name="jornada[]" value="Nocturna" /> Nocturna
+      </section>
+
+      <!-- Semestre -->
+      <section class="col-md-6">
+        <label for="semestre" class="form-label">Semestre actual</label>
+        <input type="number" name="semestre" id="semestre" class="form-control" min="1" max="10" />
+      </section>
+
+      <!-- Color favorito -->
+      <section class="col-md-6">
+        <label for="color" class="form-label">Color Favorito</label>
+        <input type="color" name="color" id="color" class="form-control form-control-color" />
+      </section>
+
+      <!-- Comentarios -->
+      <section class="col-12">
+        <label for="comentarios" class="form-label">Comentarios adicionales</label>
+        <textarea name="comentarios" id="comentarios" class="form-control" rows="4"></textarea>
+      </section>
+
+      <!-- Calificación esperada -->
+      <section class="col-md-6">
+        <label for="calificacion" class="form-label">Calificación Esperada (0 a 10)</label>
+        <input type="range" name="calificacion" id="calificacion" class="form-range" min="0" max="10" />
+      </section>
+
+      <!-- Campo oculto -->
+      <input type="hidden" name="token" value="abc123" />
+
+      <!-- Botones -->
+      <section class="col-12 d-flex justify-content-between">
+        <button type="submit" class="btn btn-success">Enviar</button>
+        <button type="reset" class="btn btn-secondary">Reiniciar</button>
+      </section>
+
+    </form>
+  </main>
+
+  <footer class="text-center py-4">
+    <small>&copy; 2025 Universidad Ejemplo</small>
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</body>
+</html>
