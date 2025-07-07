@@ -12,13 +12,3 @@ foreach ($_POST as $campo => $valor) {
     }
 }
 
-// archivo
-if (isset($_FILES['archivo']) && $_FILES['archivo']['error'] == 0) {
-    $nombreArchivo = $_FILES['archivo']['name'];
-    echo "<li class='list-group-item bg-secondary text-light'><strong>archivo</strong>: $nombreArchivo</li>";
-}
-
-echo "</ul>";
-echo "<a href='index.html' class='btn btn-light mt-4'>Volver al formulario</a>";
-echo "</body></html>";
-?>
