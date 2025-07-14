@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Facturación</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container py-4">
+  <h2 class="mb-4">Formulario de Facturación</h2>
+
+  <form action="procesar.php" method="POST" class="border p-4 bg-light rounded shadow-sm mb-4">
+    <h4>Datos del Cliente</h4>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" class="form-control" required>
+      </div>
+      <div class="col-md-6">
+        <label>Email:</label>
+        <input type="email" name="email" class="form-control" required>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label>Fecha:</label>
+        <input type="date" name="fecha" class="form-control" required>
+      </div>
+      <div class="col-md-6">
+        <label>Comentarios:</label>
+        <input type="text" name="comentarios" class="form-control">
+      </div>
+    </div>
+
+    <h4>Productos</h4>
+
+    <!-- Producto 1: Snacks -->
+    <div class="border p-3 mb-3 rounded bg-white">
+      <h5>Producto 1: Snacks</h5>
+      <input type="hidden" name="producto[]" value="Snacks">
+      <input type="hidden" name="categoria[]" value="Snacks">
+      <div class="row">
+        <div class="col-md-4">
+          <label>Precio ($):</label>
+          <input type="number" name="precio[]" step="0.01" min="1.25" max="3.10" class="form-control" required>
+        </div>
+        <div class="col-md-4">
+          <label>Cantidad:</label>
+          <input type="number" name="cantidad[]" min="1" class="form-control" required>
+        </div>
+        <div class="col-md-4 d-flex align-items-end">
+          <div class="form-check">
+            <input type="checkbox" name="iva[]" value="0" class="form-check-input" id="iva0">
+            <label class="form-check-label" for="iva0">Aplicar IVA (15%)</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 2: Bebidas -->
+    <div class="border p-3 mb-3 rounded bg-white">
+      <h5>Producto 2: Bebidas</h5>
+      <input type="hidden" name="producto[]" value="Bebidas">
+      <input type="hidden" name="categoria[]" value="Bebidas">
+      <div class="row">
+        <div class="col-md-4">
+          <label>Precio ($):</label>
+          <input type="number" name="precio[]" step="0.01" min="1.00" max="3.25" class="form-control" required>
+        </div>
+        <div class="col-md-4">
+          <label>Cantidad:</label>
+          <input type="number" name="cantidad[]" min="1" class="form-control" required>
+        </div>
+        <div class="col-md-4 d-flex align-items-end">
+          <div class="form-check">
+            <input type="checkbox" name="iva[]" value="1" class="form-check-input" id="iva1">
+            <label class="form-check-label" for="iva1">Aplicar IVA (15%)</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 3: Frutas y Verduras -->
+    <div class="border p-3 mb-3 rounded bg-white">
+      <h5>Producto 3: Frutas y Verduras</h5>
+      <input type="hidden" name="producto[]" value="Frutas y Verduras">
+      <input type="hidden" name="categoria[]" value="Frutas y Verduras">
+      <div class="row">
+        <div class="col-md-4">
+          <label>Precio ($):</label>
+          <input type="number" name="precio[]" step="0.01" min="0.50" max="5.00" class="form-control" required>
+        </div>
+        <div class="col-md-4">
+          <label>Cantidad:</label>
+          <input type="number" name="cantidad[]" min="1" class="form-control" required>
+        </div>
+        <div class="col-md-4 d-flex align-items-end">
+          <div class="form-check">
+            <input type="checkbox" name="iva[]" value="2" class="form-check-input" id="iva2">
+            <label class="form-check-label" for="iva2">Aplicar IVA (15%)</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-success">Procesar Factura</button>
+  </form>
+</body>
+</html>
