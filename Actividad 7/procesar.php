@@ -1,3 +1,21 @@
+<?php
+function calcularTotal($precio, $cantidad, $aplicaIVA) {
+    $subtotal = $precio * $cantidad;
+    $iva = $aplicaIVA ? $subtotal * 0.15 : 0;
+    $total = $subtotal + $iva;
+    return [$subtotal, $iva, $total];
+}
+
+// Capturar datos
+$nombre = $_POST['nombre'];
+$email = $_POST['email'];
+$fecha = $_POST['fecha'];
+$comentarios = $_POST['comentarios'];
+$productos = $_POST['producto'];
+$categorias = $_POST['categoria'];
+$precios = $_POST['precio'];
+$cantidades = $_POST['cantidad'];
+$ivaSeleccionado = isset($_POST['iva']) ? $_POST['iva'] : [];
 
 $subtotalGeneral = 0;
 $totalIVA = 0;
